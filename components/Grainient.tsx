@@ -209,6 +209,10 @@ const Grainient: React.FC<GrainientProps> = ({
             const rect = container.getBoundingClientRect();
             const width = Math.max(1, Math.floor(rect.width));
             const height = Math.max(1, Math.floor(rect.height));
+
+            // Avoid unnecessary resizing if dimensions haven't changed
+            if (canvas.width === width && canvas.height === height) return;
+
             renderer.setSize(width, height);
             const res = (program.uniforms.iResolution as { value: Float32Array }).value;
             res[0] = gl.drawingBufferWidth;

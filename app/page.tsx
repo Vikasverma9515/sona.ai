@@ -11,7 +11,7 @@ export default function Home() {
     <div className="relative flex min-h-screen flex-col bg-[#4F46E5] text-white overflow-hidden" style={{ fontFamily: 'var(--font-inter), system-ui, sans-serif' }}>
 
       {/* ===== BACKGROUND ===== */}
-      <div className="fixed inset-0 z-0">
+      <div className="fixed top-0 left-0 w-full h-[100vh] z-0 pointer-events-none">
         <Grainient
           color1="#4361EE" // Bright Blue
           color2="#4CC9F0" // Cyan/Light Blue

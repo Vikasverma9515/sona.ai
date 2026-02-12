@@ -15,7 +15,7 @@ export default function Home() {
         <Grainient
           color1="#4361EE" // Bright Blue
           color2="#4CC9F0" // Cyan/Light Blue
-          color3="#FFFFFF" // White
+          // color3="#FFFFFF" // White
           timeSpeed={0.2}
           colorBalance={0.5}
           warpStrength={1.5}

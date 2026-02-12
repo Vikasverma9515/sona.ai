@@ -29,7 +29,7 @@ export default function Home() {
 
       {/* ===== NAVIGATION ===== */}
       <nav className="relative z-50 flex items-center justify-between px-8 py-6 md:px-16">
-        <div className="text-4xl font-black tracking-tighter" style={{ fontFamily: 'var(--font-kanit), system-ui, sans-serif' }}>
+        <div className="text-4xl font-black tracking-normal" style={{ fontFamily: 'var(--font-kanit), system-ui, sans-serif' }}>
           SONA<span className="text-[#CCFA00]">.</span>
         </div>
         <div className="hidden md:flex items-center gap-8 text-base font-bold text-white/90">
@@ -78,7 +78,7 @@ export default function Home() {
         </div>
 
         <h1
-          className="text-7xl sm:text-8xl md:text-[10rem] lg:text-[12rem] font-black tracking-tighter leading-[0.8] mb-6 drop-shadow-sm text-center"
+          className="text-7xl sm:text-8xl md:text-[10rem] lg:text-[12rem] font-black tracking-normal leading-[0.8] mb-6 drop-shadow-sm text-center"
           style={{ fontFamily: 'var(--font-kanit), system-ui, sans-serif' }}
         >
           <span className="block text-white">SLICE</span>
@@ -103,7 +103,7 @@ export default function Home() {
       <section className="relative z-10 w-full px-6 py-12 md:py-24">
         <div className="max-w-7xl mx-auto">
           <h2
-            className="text-4xl md:text-7xl font-black mb-16 text-center tracking-tighter uppercase text-white"
+            className="text-4xl md:text-7xl font-black mb-16 text-center tracking-normal uppercase text-white"
             style={{ fontFamily: 'var(--font-kanit), system-ui, sans-serif' }}
           >
             Built for <span className="text-[#CCFA00]">Everyone</span>
@@ -150,7 +150,7 @@ export default function Home() {
       <section id="features" className="relative z-10 w-full px-6 py-24">
         <div className="max-w-7xl mx-auto">
           <h2
-            className="text-5xl md:text-8xl font-black mb-20 text-center tracking-tighter"
+            className="text-5xl md:text-8xl font-black mb-20 text-center tracking-normal"
             style={{ fontFamily: 'var(--font-kanit), system-ui, sans-serif' }}
           >
             WHATSAPP<br />
@@ -191,7 +191,7 @@ export default function Home() {
       {/* ===== CHAT MOCKUP ===== */}
       <section className="relative z-10 w-full px-6 py-24 flex flex-col items-center">
         <h2
-          className="text-4xl md:text-7xl font-black mb-16 text-center tracking-tighter uppercase"
+          className="text-4xl md:text-7xl font-black mb-16 text-center tracking-normal uppercase"
           style={{ fontFamily: 'var(--font-kanit), system-ui, sans-serif' }}
         >
           See It <span className="text-[#CCFA00]">Live</span>
@@ -250,7 +250,7 @@ export default function Home() {
       {/* ===== CTA ===== */}
       <section className="relative z-10 w-full px-6 py-32 text-center bg-black text-white">
         <h2
-          className="text-5xl md:text-9xl font-black mb-10 tracking-tighter"
+          className="text-5xl md:text-9xl font-black mb-10 tracking-normal"
           style={{ fontFamily: 'var(--font-kanit), system-ui, sans-serif' }}
         >
           READY?

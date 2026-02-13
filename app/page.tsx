@@ -3,6 +3,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import dynamic from "next/dynamic";
+import WhatsAppGuide from "@/components/WhatsAppGuide";
+import LiveDemo from "@/components/LiveDemo";
 
 const Grainient = dynamic(() => import('@/components/Grainient'), { ssr: false });
 
@@ -33,8 +35,8 @@ export default function Home() {
           SONA<span className="text-[#CCFA00]">.</span>
         </div>
         <div className="hidden md:flex items-center gap-8 text-base font-bold text-white/90">
-          <Link href="#features" className="hover:text-[#CCFA00] transition-colors duration-300">FEATURES</Link>
-          <Link href="#how-it-works" className="hover:text-[#CCFA00] transition-colors duration-300">HOW IT WORKS</Link>
+          <Link href="/features" className="hover:text-[#CCFA00] transition-colors duration-300">FEATURES</Link>
+          <Link href="/#how-it-works" className="hover:text-[#CCFA00] transition-colors duration-300">HOW IT WORKS</Link>
           <a
             href="https://github.com/Vikasverma9515/sona.ai"
             target="_blank"
@@ -98,6 +100,9 @@ export default function Home() {
           </a>
         </div>
       </section>
+
+      {/* ===== LIVE DEMO ===== */}
+      <LiveDemo />
 
       {/* ===== USE CASES ===== */}
       <section className="relative z-10 w-full px-6 py-12 md:py-24">
@@ -185,66 +190,21 @@ export default function Home() {
               </p>
             </div>
           </div>
-        </div>
-      </section>
 
-      {/* ===== CHAT MOCKUP ===== */}
-      <section className="relative z-10 w-full px-6 py-24 flex flex-col items-center">
-        <h2
-          className="text-4xl md:text-7xl font-black mb-16 text-center tracking-normal uppercase"
-          style={{ fontFamily: 'var(--font-kanit), system-ui, sans-serif' }}
-        >
-          See It <span className="text-[#CCFA00]">Live</span>
-        </h2>
-
-        {/* Floating Phone Effect */}
-        <div className="relative max-w-sm w-full mx-auto bg-black rounded-[3rem] border-8 border-black shadow-2xl overflow-hidden transform rotate-[-2deg] hover:rotate-0 transition-all duration-500">
-          <div className="bg-[#0b141a] h-[600px] w-full p-4 flex flex-col font-sans">
-            <div className="flex items-center gap-3 p-3 bg-[#202c33] rounded-xl mb-4 text-white">
-              <div className="w-10 h-10 rounded-full bg-gradient-to-r from-teal-400 to-blue-500 flex items-center justify-center font-bold">P</div>
-              <div>
-                <div className="font-bold">Project Alpha 🚀</div>
-                <div className="text-xs text-gray-400">You, Sarah, Sona, Ravi</div>
-              </div>
-            </div>
-
-            <div className="flex-1 space-y-4 overflow-y-auto">
-              <div className="bg-[#202c33] self-start rounded-tr-lg rounded-br-lg rounded-bl-lg p-3 max-w-[85%] text-white text-sm">
-                <div className="text-[10px] text-orange-400 mb-1 font-bold">Sarah</div>
-                We need to finalize the deck by EOD. Who is on it?
-              </div>
-
-              <div className="bg-[#005c4b] self-end rounded-tl-lg rounded-bl-lg rounded-br-lg p-3 max-w-[85%] text-white text-sm ml-auto">
-                I&apos;ll handle slides 1-5.
-              </div>
-
-              <div className="bg-[#202c33] self-start rounded-tr-lg rounded-br-lg rounded-bl-lg p-3 max-w-[85%] text-white text-sm">
-                <div className="text-[10px] text-blue-400 mb-1 font-bold">Ravi</div>
-                I&apos;m stuck on the research. Can we meet?
-              </div>
-
-              {/* Sona Intervention */}
-              <div className="bg-[#202c33] p-3 rounded-lg border border-[#CCFA00]/50 shadow-[0_0_15px_rgba(204,250,0,0.2)]">
-                <div className="flex items-center gap-2 mb-2">
-                  <span className="text-xs font-bold text-[#CCFA00] uppercase">⚡ Sona Logic Active</span>
-                </div>
-                <div className="text-xs text-white/90 space-y-2">
-                  <p><b>Observation:</b> Ravi is blocked.</p>
-                  <p><b>Action:</b> Scheduling sync.</p>
-                  <div className="bg-white/10 p-2 rounded text-center font-mono">
-                    Checking calendars... ⏳
-                  </div>
-                </div>
-              </div>
-
-              <div className="bg-[#202c33] self-start rounded-tr-lg rounded-br-lg rounded-bl-lg p-3 max-w-[85%] text-white text-sm">
-                <div className="text-[10px] text-[#CCFA00] mb-1 font-bold">Sona 🤖</div>
-                I&apos;ve noticed a blocker. I found a slot at 4:30 PM for everyone. Sending invites now. 📅
-              </div>
-            </div>
+          <div className="mt-20 text-center">
+            <Link href="/features" className="group inline-flex items-center gap-3 rounded-full border border-white/20 bg-white/5 hover:bg-white/10 px-8 py-4 text-lg font-bold transition-all hover:scale-105 backdrop-blur-md">
+              <span>View All Capabilities</span>
+              <span className="group-hover:translate-x-1 transition-transform">→</span>
+            </Link>
           </div>
         </div>
       </section>
+
+      {/* ===== HOW IT WORKS / GUIDE ===== */}
+      <WhatsAppGuide />
+
+      {/* ===== CHAT MOCKUP / LIVE DEMO ===== */}
+
 
 
       {/* ===== CTA ===== */}

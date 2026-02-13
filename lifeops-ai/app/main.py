@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from app.webhooks import router as webhook_router
+from app.oauth import router as oauth_router
 from app.scheduler import start_scheduler
 from dotenv import load_dotenv
 import os
@@ -9,6 +10,7 @@ load_dotenv()
 app = FastAPI(title="LifeOps AI")
 
 app.include_router(webhook_router)
+app.include_router(oauth_router)
 
 
 @app.on_event("startup")

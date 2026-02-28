@@ -35,6 +35,7 @@ export default function Home() {
           SONA<span className="text-[#CCFA00]">.</span>
         </div>
         <div className="hidden md:flex items-center gap-8 text-base font-bold text-white/90">
+          <Link href="/chat" className="hover:text-[#CCFA00] transition-colors duration-300">CHAT</Link>
           <Link href="/features" className="hover:text-[#CCFA00] transition-colors duration-300">FEATURES</Link>
           <Link href="/#how-it-works" className="hover:text-[#CCFA00] transition-colors duration-300">HOW IT WORKS</Link>
           <a
